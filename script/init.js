@@ -1,21 +1,15 @@
-"use strict";
+'use strict';
 
-var app = new PLAYGROUND.Application({
-
+game.app = new PLAYGROUND.Application({
   smoothing: false,
 
   create: function create() {
-
     /* things to preload */
-
-    this.loadImage("giana");
+    this.loadImage('giana');
   },
 
   ready: function ready() {
-
     /* after preloading route events to the game state */
-
-    this.setState(ENGINE.Game);
+    this.setState(game.scenes.main);
   }
-
 });

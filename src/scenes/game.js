@@ -1,17 +1,11 @@
-"use strict";
+game.scenes.main = {
+  create: function() {},
 
-ENGINE.Game = {
-
-  create: function create() {},
-
-  step: function step(dt) {
-
+  step: function(dt) {
     /* update your game logic here */
-
   },
 
-  render: function render() {
-
+  render: function() {
     /* get reference to the application */
 
     var app = this.app;
@@ -22,7 +16,7 @@ ENGINE.Game = {
 
     /* clear screen */
 
-    layer.clear("#222");
+    layer.clear('#222');
 
     /* save all setting of drawing pointer */
 
@@ -46,11 +40,14 @@ ENGINE.Game = {
 
     /* draw text - this is not affected by align */
 
-    layer.fillStyle("#fff").textAlign("center").fillText("Do you remember me?", 0, 24).fillText("Find me in script/Game.js", 0, 48);
+    layer
+      .fillStyle('#fff')
+      .textAlign('center')
+      .fillText('Do you remember me?', 0, 24)
+      .fillText('Find me in script/Game.js', 0, 48);
 
     /* restore drawing pointer to its previous state */
 
     layer.restore();
-  }
-
+  },
 };
