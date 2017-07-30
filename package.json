@@ -1,0 +1,14 @@
+{
+  "name": "care-programming",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "babel src --out-dir script --copy-files",
+    "dev": "babel src --out-dir script --watch --copy-files & python -m SimpleHTTPServer 8080"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^4.3.0"
+  }
+}
